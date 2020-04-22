@@ -5,7 +5,8 @@ function Navbar() {
     return (
         <div className="navbar-container">
             <ul className="navbar">
-                
+                <li className="navbar-list"> Home </li>
+                <li className="navbar-list"> About </li>
             </ul>
         </div>
     )

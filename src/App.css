@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Pixel";
+  src: url("./assets/Retro\ Gaming.ttf");
+}
+
+* {
+  font-family: "Pixel";
+  font-weight: bold;
+}
 .background{
   position: relative;
   width: 100%;
@@ -15,6 +24,8 @@
   background-color: #114486;
   height: 50px;
 }
+
+
 
 .navbar-list{
   color: white

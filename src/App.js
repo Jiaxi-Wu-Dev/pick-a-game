@@ -5,6 +5,7 @@ import background from './assets/background.jpg';
 import Home from './components/Home';
 import About from './components/About';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Sidebar from './components/Sidebar';
 
 class App extends Component {
   state = {}
@@ -31,6 +32,7 @@ class App extends Component {
             <Route path="/" exact component={Home} />
             <Route path='/about' component={About} />
           </Switch>
+          <Sidebar />
         </div>
       </Router>);
   }

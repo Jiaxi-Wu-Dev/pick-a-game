@@ -5,7 +5,7 @@ function Navbar() {
     return (
         <div className="navbar-container">
             <ul className="navbar">
-                HELLOOO
+                
             </ul>
         </div>
     )

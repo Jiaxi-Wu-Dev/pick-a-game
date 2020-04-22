@@ -5,7 +5,7 @@ Wireframe
 
 Mission Statement:
 
-Now that people have more time to spend on video games, a big question can be "what should I play?". That is what this app is aimed at solving. Using the IGDB API (https://www.igdb.com/api) which is a video game API, the app will return video game recommendations to the user. Choices are 1 player games, 2 player games, multiplayer games, and critically acclaimed games in ranked order.  
+Now that people have more time to spend on video games, a big question can be "what should I play?". That is what this app is aimed at solving. Using the RAWG API (https://rawg.io/) which is a video game API, the app will return video game recommendations to the user. Choices are 1 player games, 2 player games, multiplayer games, and critically acclaimed games in ranked order.  
 
 Name 
 Name of the application will be called gamePicker

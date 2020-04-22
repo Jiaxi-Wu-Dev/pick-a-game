@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar';
 import './App.css';
-import background from './assets/background.jpg'
-import Home from './components/Home'
-import About from './components/About'
+import background from './assets/background.jpg';
+import Home from './components/Home';
+import About from './components/About';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 class App extends Component {

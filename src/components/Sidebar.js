@@ -8,9 +8,11 @@ class Sidebar extends Component {
 
 
     getOnePlayerContent = () => {
-        axios.get("https://api.rawg.io/api/games").then(res => {
-            console.log("getting data ---->" + res.json)
-        })
+        axios.get("https://api.rawg.io/api/games?page_size=10")
+            .then(res => {
+                console.log("getting data ---->" + res.json)
+            })
+        
     }
 
     componentDidMount() {

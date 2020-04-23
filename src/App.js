@@ -10,18 +10,6 @@ import Sidebar from './components/Sidebar';
 class App extends Component {
   state = {}
 
-  componentDidMount() {
-    fetch('https://api.rawg.io/api/games', {
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      }
-    })
-      /* get data and console it  */
-      .then(res => res.json())
-      .then(text => console.log(text))
-  }
-
   render() {
     return (
       <Router>

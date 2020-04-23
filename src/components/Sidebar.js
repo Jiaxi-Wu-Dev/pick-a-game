@@ -8,7 +8,7 @@ class Sidebar extends Component {
     }
 
     //create a function that gets data for one player games
-    getOnePlayerContent = () => {
+    componentDidMount() {
         axios.get("https://api.rawg.io/api/games?page_size=10")
             .then(res => {
                 console.log(res)
@@ -16,11 +16,6 @@ class Sidebar extends Component {
                     games: res.data
                 })
             })
-        
-    }
-
-    componentDidMount() {
-        this.getOnePlayerContent()
     }
 
     render() {
@@ -30,6 +25,9 @@ class Sidebar extends Component {
                 <li className="sidebar-list" onClick={this.getOnePlayerContent}> One Player </li>
                 <li className="sidebar-list"> Two Player </li>
                 <li className="sidebar-list"> Free To play</li>
+            </ul>
+            <ul>
+                {this.state.games.map( game => <li>{game.games}</li>)}
             </ul>
 
         </div>);

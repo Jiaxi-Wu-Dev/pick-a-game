@@ -15,13 +15,13 @@ class Sidebar extends Component {
     
     //create a function that gets data for one player games
 
-    getOnePlayerData = async "https://api.rawg.io/api/games?page_size=10" => {
+/*     getOnePlayerData = async "https://api.rawg.io/api/games?page_size=10" => {
         const response = await axios("https://api.rawg.io/api/games?page_size=10");
         console.log('response successful', response.data)
-    };
+    }; */
 
-    /* componentDidMount(){
-        axios.get("https://api.rawg.io/api/games?page_size=10")
+    async componentDidMount(){
+        const response = await axios.get("https://api.rawg.io/api/games?page_size=10")
             .then(res => {
                 console.log(res)
                 this.setState({
@@ -31,7 +31,8 @@ class Sidebar extends Component {
             .catch(error => {
                 console.log('error:', error);
             })
-    } */
+        console.log(response)
+    } 
 
     render() {
         return (<div>

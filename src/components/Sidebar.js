@@ -3,17 +3,21 @@ import axios from 'axios'
 
 
 class Sidebar extends Component {
-    state = {
-        games:[]
-    }
+    constructor (props)
+    {
+        super(props);
 
+        this.state = {
+            games: []
+        };
+    }
     //create a function that gets data for one player games
-    componentDidMount() {
+    componentDidMount(){
         axios.get("https://api.rawg.io/api/games?page_size=10")
             .then(res => {
                 console.log(res)
                 this.setState({
-                    games: res.data
+                    games: res.data.results
                 })
             })
     }
@@ -27,7 +31,7 @@ class Sidebar extends Component {
                 <li className="sidebar-list"> Free To play</li>
             </ul>
             <ul>
-                {this.state.games.map( game => <li>{game.games}</li>)}
+                {this.state.games.map(game => <li> {game.name} </li>)}
             </ul>
 
         </div>);

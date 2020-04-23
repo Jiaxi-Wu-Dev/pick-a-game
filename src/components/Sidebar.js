@@ -6,11 +6,10 @@ class Sidebar extends Component {
     state = {}
 
 
-
     getOnePlayerContent = () => {
         axios.get("https://api.rawg.io/api/games?page_size=10")
             .then(res => {
-                console.log("getting data ---->" + res.json)
+                console.log(res.data)
             })
         
     }

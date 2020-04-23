@@ -11,20 +11,20 @@ There should be 2 container components (stateful) - check
 There should be 5 presentational components (stateless) - check 
 There should be 3 or more routes -check
 The application must make use of react-router - check
-Make use of async actions to send data to and receive data from a server 
-Your client-side application should handle the display of data with minimal data manipulation
- Uses CSS or styled components to style application
- Frontend uses Axios requests 
- App renders in browser
+Make use of async actions to send data to and receive data from a server  - check 
+Your client-side application should handle the display of data with minimal data manipulation - check
+ Uses CSS or styled components to style application - check
+ Frontend uses Axios requests - check
+ App renders in browser - check
 On project submission there should be 0 console.log() statements seen in the browser
-Be written with kebab-case CSS class names (e.g. this-is-the-class-name)
-Be written with semantic, camelCase JavaScript variable names
-pseudocode file in root of project repository
- Has readme.md file at the root of repository
- readme file clearly documents the purpose of the project as a problem statement
- readme file clearly documents the target end user for this program.
+Be written with kebab-case CSS class names (e.g. this-is-the-class-name) - check
+Be written with semantic, camelCase JavaScript variable names - check
+pseudocode file in root of project repository - check 
+ Has readme.md file at the root of repository - check
+ readme file clearly documents the purpose of the project as a problem statement - check
+ readme file clearly documents the target end user for this program. - check
  readme file has embedded link (not url) to publicly deployed app
-Using a 3rd party api
+Using a 3rd party api - check  
 
 Mission Statement:
 

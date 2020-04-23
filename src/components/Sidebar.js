@@ -8,9 +8,11 @@ class Sidebar extends Component {
         super(props);
 
         this.state = {
-            games: []
+            games: [],
+            oneplayer: []
         };
     }
+    
     //create a function that gets data for one player games
     componentDidMount(){
         axios.get("https://api.rawg.io/api/games?page_size=10")
@@ -19,6 +21,9 @@ class Sidebar extends Component {
                 this.setState({
                     games: res.data.results
                 })
+            })
+            .catch(error => {
+                console.log('error:', error);
             })
     }
 

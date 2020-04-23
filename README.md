@@ -3,15 +3,15 @@ Wireframe
 ![Wireframe](https://raw.githubusercontent.com/Jiaxi-Wu-Dev/pick-a-game/master/src/assets/Wireframe.png)
 
 MVP:
-Project must be approved by Instructor approval at the start of project week
-Project code is pushed to a public Git repository
-The code should be written in ES6 as much as possible
-Use the create-react-app generator to start your project.
-There should be 2 container components (stateful)
-There should be 5 presentational components (stateless)
-There should be 3 or more routes
-The application must make use of react-router
-Make use of async actions to send data to and receive data from a server
+Project must be approved by Instructor approval at the start of project week - check
+Project code is pushed to a public Git repository - check 
+The code should be written in ES6 as much as possible - check 
+Use the create-react-app generator to start your project. - check 
+There should be 2 container components (stateful) - check 
+There should be 5 presentational components (stateless) - check 
+There should be 3 or more routes -check
+The application must make use of react-router - check
+Make use of async actions to send data to and receive data from a server 
 Your client-side application should handle the display of data with minimal data manipulation
  Uses CSS or styled components to style application
  Frontend uses Axios requests 

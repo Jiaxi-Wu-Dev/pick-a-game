@@ -3,13 +3,18 @@ import axios from 'axios'
 
 
 class Sidebar extends Component {
-    state = {}
+    state = {
+        games:[]
+    }
 
     //create a function that gets data for one player games
     getOnePlayerContent = () => {
         axios.get("https://api.rawg.io/api/games?page_size=10")
             .then(res => {
-                console.log(res.data)
+                console.log(res)
+                this.setState({
+                    games: res.data
+                })
             })
         
     }

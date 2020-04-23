@@ -1,20 +1,33 @@
-import React from 'react';
+import React, { Component } from 'react';
+import axios from 'axios'
 
-const Sidebar = () => {
 
-    const getOnePlayerContent = () => {
-        console.log("hello")
+class Sidebar extends Component {
+    state = {}
+
+
+
+    getOnePlayerContent = () => {
+        axios.get("https://api.rawg.io/api/games").then(res => {
+            console.log("getting data ---->" + res.json)
+        })
     }
 
-    return (
-        <div>
+    componentDidMount() {
+        this.getOnePlayerContent()
+    }
+
+    render() {
+        return (<div>
+
             <ul className="sidebar">
-                <li className="sidebar-list" onClick={getOnePlayerContent}> One Player </li>
+                <li className="sidebar-list" onClick={this.getOnePlayerContent}> One Player </li>
                 <li className="sidebar-list"> Two Player </li>
                 <li className="sidebar-list"> Free To play</li>
             </ul>
-        </div>
-    );
+
+        </div>);
+    }
 }
 
 export default Sidebar;

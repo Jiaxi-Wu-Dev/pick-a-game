@@ -34,12 +34,7 @@ class Sidebar extends Component {
             })
         console.log(response)
     } 
-
-    getOnePlayerContent(){
-     
-        {this.state.games.map(game => <li> {game.name} </li>)}
-        
-    }
+    
 
     render() {
         return (<div>

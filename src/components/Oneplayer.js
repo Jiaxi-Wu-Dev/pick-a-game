@@ -10,7 +10,7 @@ class Oneplayer extends Component {
     }
 
     componentDidMount() {
-        axios.get("https://api.rawg.io/api/games?page_size=10&tag=31")
+        axios.get("https://api.rawg.io/api/games?page_size=20&tags=singleplayer")
             .then(res => {
                 console.log(res)
                 this.setState({
@@ -25,7 +25,7 @@ class Oneplayer extends Component {
 
     render() { 
         return ( <div>
-            <ul className="oneplayer-list">
+            <ul className="list-styling">
                 {this.state.games.map(game => <li> {game.name} </li>)}
             </ul>
         </div> );

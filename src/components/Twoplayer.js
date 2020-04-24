@@ -10,7 +10,7 @@ class Twoplayer extends Component {
     }
 
     componentDidMount() {
-        axios.get("https://api.rawg.io/api/games?page_size=10&tag=multiplayer&tag=online")
+        axios.get("https://api.rawg.io/api/games?page_size=20&tags=multiplayer&tags=online")
             .then(res => {
                 console.log(res)
                 this.setState({
@@ -25,7 +25,7 @@ class Twoplayer extends Component {
 
     render() { 
         return ( <div>
-            <ul className="oneplayer-list">
+            <ul className="list-styling">
                 {this.state.games.map(game => <li> {game.name} </li>)}
             </ul>
         </div> );

@@ -25,7 +25,7 @@ class Free extends Component {
 
     render() { 
         return ( <div>
-            <ul className="free">
+            <ul className="list-styling">
             {this.state.games.map(game => <li> {game.name} </li>)}
             </ul>
         </div> );

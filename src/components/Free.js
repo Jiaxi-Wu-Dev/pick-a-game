@@ -10,7 +10,7 @@ class Free extends Component {
     }
 
     componentDidMount() {
-        axios.get("https://api.rawg.io/api/games?page_size=10&tag=2")
+        axios.get("https://api.rawg.io/api/games?page_size=10&search=free")
             .then(res => {
                 console.log(res)
                 this.setState({

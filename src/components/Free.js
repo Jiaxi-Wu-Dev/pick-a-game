@@ -36,3 +36,16 @@ class Free extends Component {
 }
  
 export default Free; */
+
+import React, {useState, useEffect } from 'react';
+import './App.css';
+
+function Free() {
+    useEffect(() => {
+        fetchItems();
+    }, []);
+
+    const [gameTitles, setTitles] = useState([]);
+
+    const fetchItems = async() => {}
+}

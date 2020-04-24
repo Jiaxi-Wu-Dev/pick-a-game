@@ -35,6 +35,12 @@ class Sidebar extends Component {
         console.log(response)
     } 
 
+    getOnePlayerContent(){
+     
+        {this.state.games.map(game => <li> {game.name} </li>)}
+        
+    }
+
     render() {
         return (<div>
 
@@ -43,9 +49,6 @@ class Sidebar extends Component {
                 <li className="sidebar-list"> Two Player </li>
                 <li className="sidebar-list"> Free To play</li>
             </ul>
-            <ul>
-                {this.state.games.map(game => <li> {game.name} </li>)}
-            </ul> 
 
         </div>);
     }

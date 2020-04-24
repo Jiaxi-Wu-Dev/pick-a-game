@@ -21,12 +21,13 @@ class Sidebar extends Component {
     }; */
 
     async componentDidMount(){
-        const response = await axios.get("https://api.rawg.io/api/games?page_size=5&tags=31")
+        const response = await axios.get("https://api.rawg.io/api/games?page_size=10&tag=31")
             .then(res => {
                 console.log(res)
                 this.setState({
                     games: res.data.results
                 })
+
             })
             .catch(error => {
                 console.log('error:', error);
@@ -44,7 +45,7 @@ class Sidebar extends Component {
             </ul>
             <ul>
                 {this.state.games.map(game => <li> {game.name} </li>)}
-            </ul>
+            </ul> 
 
         </div>);
     }

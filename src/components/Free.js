@@ -39,7 +39,6 @@ export default Free; */
 /* Using https://www.youtube.com/watch?v=Law7wfdg_ls&t=585s a guide  */
 
 import React, {useState, useEffect } from 'react';
-import './App.css';
 
 function Free() {
     useEffect(() => {
@@ -53,9 +52,9 @@ function Free() {
             "https://api.rawg.io/api/games?&page_size=20&tags=free-to-play"
             );
 
-        const items = await data.json();
+        const gameTitles = await data.json();
         console.log(gameTitles);
-        setItems(gameTitles);
+        setTitles(gameTitles);
     };
 
     return (

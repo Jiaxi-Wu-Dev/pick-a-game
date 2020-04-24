@@ -4,6 +4,7 @@ import './App.css';
 import background from './assets/background.jpg';
 import Home from './components/Home';
 import About from './components/About';
+import Oneplayer from './components/Oneplayer'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 
@@ -23,6 +24,9 @@ class App extends Component {
             <Route path='/about' component={About} />
           </Switch>
           <Sidebar />
+          <Switch>
+            <Route path="/oneplayer" component={Oneplayer} />
+          </Switch>
         </div>
       </Router>);
   }

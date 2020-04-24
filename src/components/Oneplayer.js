@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 import axios from 'axios';
 
-const Oneplayer = () => {
-    async componentDidMount(){
-        const response = await axios.get("https://api.rawg.io/api/games?page_size=10&tag=31")
+class Oneplayer extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { 
+            games: []
+         }
+    }
+
+    componentDidMount() {
+        axios.get("https://api.rawg.io/api/games?page_size=10&tag=31")
             .then(res => {
                 console.log(res)
                 this.setState({
@@ -14,11 +21,17 @@ const Oneplayer = () => {
             .catch(error => {
                 console.log('error:', error);
             })
-        console.log(response)
-    } 
-    return(<div>
+    }
 
-    </div>)
+    render() { 
+        return ( <div>
+            <ul className="oneplayer-list">
+                {this.state.games.map(game => <li> {game.name} </li>)}
+            </ul>
+        </div> );
+    }
 }
+ 
+export default Oneplayer;
 
-export default Oneplayer 
+

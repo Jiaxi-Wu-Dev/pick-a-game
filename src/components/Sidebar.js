@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import axios from 'axios'
+import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 
 class Sidebar extends Component {
@@ -34,13 +35,14 @@ class Sidebar extends Component {
             })
         console.log(response)
     } 
-    
 
     render() {
         return (<div>
 
             <ul className="sidebar">
-                <li className="sidebar-list" onClick={this.getOnePlayerContent}> One Player </li>
+                <Link to='/oneplayer'>
+                    <li className="sidebar-list" > One Player </li>
+                </Link>
                 <li className="sidebar-list"> Two Player </li>
                 <li className="sidebar-list"> Free To play</li>
             </ul>

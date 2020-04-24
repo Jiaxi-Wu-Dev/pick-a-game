@@ -36,6 +36,7 @@ class Free extends Component {
 }
  
 export default Free; */
+/* Using https://www.youtube.com/watch?v=Law7wfdg_ls&t=585s a guide  */
 
 import React, {useState, useEffect } from 'react';
 import './App.css';
@@ -59,7 +60,11 @@ function Free() {
 
     return (
         <div>
-            {gameTitles.map()}
+            {gameTitles.map(title => (
+                <h1>{title.name} </h1>
+            ))}
         </div>
     );
 }
+
+export default Free;

@@ -47,5 +47,19 @@ function Free() {
 
     const [gameTitles, setTitles] = useState([]);
 
-    const fetchItems = async() => {}
+    const fetchItems = async () => {
+        const data = await fetch(
+            "https://api.rawg.io/api/games?&page_size=20&tags=free-to-play"
+            );
+
+        const items = await data.json();
+        console.log(gameTitles);
+        setItems(gameTitles);
+    };
+
+    return (
+        <div>
+            {gameTitles.map()}
+        </div>
+    );
 }

@@ -46,7 +46,9 @@ class Sidebar extends Component {
                 <Link to='/twoplayer'>
                     <li className="sidebar-list"> Two Player </li>
                 </Link>
-                <li className="sidebar-list"> Free To play</li>
+                <Link>
+                    <li className="sidebar-list"> Free To play</li>
+                </Link> 
             </ul>
 
         </div>);

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios'
 
 class Free extends Component {
     constructor(props) {
@@ -9,7 +10,7 @@ class Free extends Component {
     }
 
     componentDidMount() {
-        axios.get("https://api.rawg.io/api/games?page_size=10&tag=7")
+        axios.get("https://api.rawg.io/api/games?page_size=10&tag=2")
             .then(res => {
                 console.log(res)
                 this.setState({
@@ -21,14 +22,15 @@ class Free extends Component {
                 console.log('error:', error);
             })
     }
-    
+
     render() { 
         return ( <div>
-
+            <ul>
+            {this.state.games.map(game => <li> {game.name} </li>)}
+            </ul>
         </div> );
     }
 
 }
  
-export default Free;<div>
-</div>
+export default Free;

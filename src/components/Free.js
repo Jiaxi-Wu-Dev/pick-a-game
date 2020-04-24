@@ -10,7 +10,7 @@ class Free extends Component {
     }
 
     componentDidMount() {
-        axios.get("https://api.rawg.io/api/games?page_size=10&search=free-to-play")
+        axios.get("https://api.rawg.io/api/games?&ordering=-rating&page_size=10&search=free-to-play")
             .then(res => {
                 console.log(res)
                 this.setState({
@@ -25,7 +25,7 @@ class Free extends Component {
 
     render() { 
         return ( <div>
-            <ul>
+            <ul className="free">
             {this.state.games.map(game => <li> {game.name} </li>)}
             </ul>
         </div> );

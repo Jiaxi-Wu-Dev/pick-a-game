@@ -21,7 +21,7 @@ class Sidebar extends Component {
     }; */
 
     async componentDidMount(){
-        const response = await axios.get("https://api.rawg.io/api/games?tags=singleplayer")
+        const response = await axios.get("https://api.rawg.io/api/games?page_size=5&tags=31")
             .then(res => {
                 console.log(res)
                 this.setState({

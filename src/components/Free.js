@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
+/* import React, { Component } from 'react';
 import axios from 'axios'
 
 class Free extends Component {
     constructor(props) {
         super(props);
         this.state = { 
-            games: []
+            games: [],
+            setGames:
          }
     }
 
@@ -15,6 +16,7 @@ class Free extends Component {
                 console.log(res)
                 this.setState({
                     games: res.data.results
+                    setGames: 
                 })
 
             })
@@ -26,11 +28,11 @@ class Free extends Component {
     render() { 
         return ( <div>
             <ul className="list-styling">
-            {this.state.games.map(game => <li> {game.name} </li>)}
+            {this.state.games.map(game =><li> {game.name} </li>)}
             </ul>
         </div> );
     }
 
 }
  
-export default Free;
+export default Free; */

@@ -1,14 +1,11 @@
 import React, {useState, useEffect} from 'react';
-import './App.css';
+
 
 function Game() {
-    useEffect(() => {
-        fetchItems();
-    }, []);
+    useEffect(() => {}, []);
 
     const [item, setItem] = useState({});
 
-    const fetchItem = async () => {};
 
     return (
         <div>
@@ -16,3 +13,5 @@ function Game() {
         </div>
     )
 }
+
+export default Game; 

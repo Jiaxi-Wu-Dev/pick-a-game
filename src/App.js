@@ -6,7 +6,8 @@ import Home from './components/Home';
 import About from './components/About';
 import Oneplayer from './components/Oneplayer';
 import Twoplayer from './components/Twoplayer';
-import Free from './components/Free'
+import Free from './components/Free';
+import GameDetail from './components/GameDetails'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 
@@ -27,10 +28,10 @@ class App extends Component {
           </Switch>
           <Sidebar />
           <Switch>
-            <Route path="/oneplayer" component={Oneplayer} />
+            <Route path="/oneplayer" exact component={Oneplayer} />
             <Route path="/twoplayer" component={Twoplayer} />
             <Route path="/free" component={Free} />
-            <Route path="/oneplayer/:id" />
+            <Route path="/oneplayer/:id" component={GameDetail} />
           </Switch>
         </div>
       </Router>);

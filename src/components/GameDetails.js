@@ -20,11 +20,11 @@ function Game({ match }) {
 
     return (
         <div className="container-details">
-            <h1> Name: {item.name} </h1>
+            <h1 className="rainbow-text"> Name: {item.name} </h1>
             <img src={item.background_image} alt="" width="500px"/>
-            <h1> Description: {item.description} </h1>
-            <h1> Rating: {item.rating} </h1>
-            <h1> Released: {item.released} </h1>
+            <h1 className="rainbow-text"> Description: {item.description} </h1>
+            <h1 className="rainbow-text"> Rating: {item.rating} </h1>
+            <h1 className="rainbow-text"> Released: {item.released} </h1>
         </div>
     )
 }

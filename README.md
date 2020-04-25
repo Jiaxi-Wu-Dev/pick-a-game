@@ -16,14 +16,14 @@ Your client-side application should handle the display of data with minimal data
  Uses CSS or styled components to style application - check
  Frontend uses Axios requests - check
  App renders in browser - check
-On project submission there should be 0 console.log() statements seen in the browser
+On project submission there should be 0 console.log() statements seen in the browser - check 
 Be written with kebab-case CSS class names (e.g. this-is-the-class-name) - check
 Be written with semantic, camelCase JavaScript variable names - check
 pseudocode file in root of project repository - check 
  Has readme.md file at the root of repository - check
  readme file clearly documents the purpose of the project as a problem statement - check
  readme file clearly documents the target end user for this program. - check
- readme file has embedded link (not url) to publicly deployed app
+ readme file has embedded link (not url) to publicly deployed app - check
 Using a 3rd party api - check  
 
 Mission Statement:

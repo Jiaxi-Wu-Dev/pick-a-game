@@ -48,7 +48,7 @@
   top: 500px;
   left: 15px;
   color: purple;
-  background-color: white;
+  background-color: black;
   list-style: none;
 
 }
@@ -60,4 +60,10 @@
   font-size: 6px;
   color: red;
   background-color: black;
+}
+
+.rainbow-text {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  color: transparent;
 }

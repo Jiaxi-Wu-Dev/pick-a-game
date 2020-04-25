@@ -14,7 +14,7 @@ function Game({ match }) {
             `https://api.rawg.io/api/games/${match.params.id}`);
 
         const item = await fetchItem.json();
-
+            setItem(item)
         console.log(item);
     }
 

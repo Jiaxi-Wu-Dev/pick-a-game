@@ -16,7 +16,6 @@ function Game({ match }) {
 
         const item = await fetchItem.json();
             setItem(item)
-        console.log(item);
     }
 
     return (

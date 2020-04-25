@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import {Link} from 'react-router-dom'
 
 class Twoplayer extends Component {
     constructor(props) {
@@ -26,7 +27,11 @@ class Twoplayer extends Component {
     render() { 
         return ( <div>
             <ul className="list-styling">
-                {this.state.games.map(game => <li> {game.name} </li>)}
+                {this.state.games.map(game => <li key={game.id}> 
+                    <Link to={`/twoplayer/${game.id}`}>
+                    {game.name} 
+                    </Link>
+                    </li>)}
             </ul>
         </div> );
     }

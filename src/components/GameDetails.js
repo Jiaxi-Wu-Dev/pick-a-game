@@ -10,7 +10,7 @@ function Game() {
 
     const fetchItem = async () => {
         const fetchItem = await fetch (
-            `https://api.rawg.io/api/games?page_size=20&tags=singleplayer&results&id=3498`);
+            `https://api.rawg.io/api/games/3498`);
 
         const item = await fetchItem.json();
 

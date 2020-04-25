@@ -8,6 +8,11 @@ function Game() {
 
     const [item, setItem] = useState({});
 
-    const fetchItem = async () => {}
-    }
+    const fetchItem = async () => {};
+
+    return (
+        <div>
+            <h1> Item </h1>
+        </div>
+    )
 }

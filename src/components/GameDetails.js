@@ -7,7 +7,9 @@ function Game({ match }) {
         console.log(match);
     }, []);
 
-    const [item, setItem] = useState({});
+    const [item, setItem] = useState({
+        images:{}
+    });
 
     const fetchItem = async () => {
         const fetchItem = await fetch (
@@ -20,7 +22,8 @@ function Game({ match }) {
 
     return (
         <div>
-            <h1> Item </h1>
+            <h1> {item.name} </h1>
+            <img src={item.background_image} alt="" width="300px"/>
         </div>
     )
 }

@@ -22,18 +22,18 @@ class Sidebar extends Component {
     }; */
 
     async componentDidMount(){
-        const response = await axios.get("https://api.rawg.io/api/games?page_size=10&tag=31")
+        await axios.get("https://api.rawg.io/api/games?page_size=10&tag=31")
             .then(res => {
-                console.log(res)
+                
                 this.setState({
                     games: res.data.results
                 })
 
             })
             .catch(error => {
-                console.log('error:', error);
+                return(error)
             })
-        console.log(response)
+       
     } 
 
     render() {

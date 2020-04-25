@@ -59,9 +59,9 @@ function Free() {
 
     return (
         <div>
-            {gameTitles.map(title => (
-                <h1>{title.name} </h1>
-            ))}
+            {/* {gameTitles.map(title => (
+                <h1> key={gameTitles.itemid}> {title.name} </h1>
+            ))} */}
         </div>
     );
 }

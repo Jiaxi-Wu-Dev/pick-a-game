@@ -10,7 +10,7 @@ function Game({ match }) {
 
     const fetchItem = async () => {
         const fetchItem = await fetch (
-            `https://api.rawg.io/api/games/${match.results.id}`);
+            `https://api.rawg.io/api/games/${match.data.results.id}`);
 
         const item = await fetchItem.json();
 

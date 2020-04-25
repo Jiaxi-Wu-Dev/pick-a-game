@@ -29,9 +29,9 @@ class App extends Component {
           <Sidebar />
           <Switch>
             <Route path="/oneplayer" exact component={Oneplayer} />
+            <Route path="/oneplayer/:id" component={GameDetail} />
             <Route path="/twoplayer" component={Twoplayer} />
             <Route path="/free" component={Free} />
-            <Route path="/oneplayer/:id" component={GameDetail} />
           </Switch>
         </div>
       </Router>);

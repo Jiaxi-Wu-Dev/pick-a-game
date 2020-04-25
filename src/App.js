@@ -33,6 +33,7 @@ class App extends Component {
             <Route path="/twoplayer" exact component={Twoplayer} />
             <Route path="/twoplayer/:id" component={GameDetails} />
             <Route path="/free" exact component={Free} />
+            <Route path="/free/:id" component={GameDetails} />
           </Switch>
         </div>
       </Router>);

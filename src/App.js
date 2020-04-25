@@ -1,3 +1,5 @@
+// set up navbar and sidebar components with switch and router and links
+
 import React, { Component } from 'react';
 import Navbar from './components/Navbar';
 import './App.css';

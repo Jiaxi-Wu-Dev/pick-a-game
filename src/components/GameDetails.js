@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 
 
-function Game() {
+function Game({ match }) {
     useEffect(() => {
         fetchItem();
     }, []);
@@ -10,7 +10,7 @@ function Game() {
 
     const fetchItem = async () => {
         const fetchItem = await fetch (
-            `https://api.rawg.io/api/games/3498`);
+            `https://api.rawg.io/api/games/${match.results.id}`);
 
         const item = await fetchItem.json();
 

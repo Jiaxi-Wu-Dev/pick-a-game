@@ -4,7 +4,6 @@ import React, {useState, useEffect} from 'react';
 function Game({ match }) {
     useEffect(() => {
         fetchItem();
-        console.log(match);
     }, []);
 
     const [item, setItem] = useState({

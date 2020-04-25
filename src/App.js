@@ -7,7 +7,7 @@ import About from './components/About';
 import Oneplayer from './components/Oneplayer';
 import Twoplayer from './components/Twoplayer';
 import Free from './components/Free';
-import GameDetail from './components/GameDetails'
+import GameDetails from './components/GameDetails'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 
@@ -29,9 +29,9 @@ class App extends Component {
           <Sidebar />
           <Switch>
             <Route path="/oneplayer" exact component={Oneplayer} />
-            <Route path="/oneplayer/:id" component={GameDetail} />
+            <Route path="/oneplayer/:id" component={GameDetails} />
             <Route path="/twoplayer" component={Twoplayer} />
-            <Route path="/oneplayer/:id" component={GameDetail} />
+            <Route path="/twoplayer/:id" component={GameDetails} />
             <Route path="/free" component={Free} />
           </Switch>
         </div>

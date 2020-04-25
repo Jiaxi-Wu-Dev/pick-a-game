@@ -20,10 +20,12 @@ class App extends Component {
 
   render() {
     return (
+      // Setting up router and switch
       <Router>
         <div className="App">
           <Navbar />
           <img className="background" src={background} alt=""></img>
+         {/*  Nav is outside the switch bar so that its always visible */}
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path='/about' component={About} />

@@ -4,13 +4,14 @@ import React, {useState, useEffect} from 'react';
 function Game({ match }) {
     useEffect(() => {
         fetchItem();
+        console.log(match);
     }, []);
 
     const [item, setItem] = useState({});
 
     const fetchItem = async () => {
         const fetchItem = await fetch (
-            `https://api.rawg.io/api/games/${match.data.results.id}`);
+            `https://api.rawg.io/api/games/${match.params.id}`);
 
         const item = await fetchItem.json();
 

@@ -30,6 +30,7 @@ class App extends Component {
             <Route path="/" exact component={Home} />
             <Route path='/about' component={About} />
           </Switch>
+           {/*  Switch is outside the switch bar so that its always visible */}
           <Sidebar />
           <Switch>
             <Route path="/oneplayer" exact component={Oneplayer} />

@@ -13,14 +13,14 @@ class Twoplayer extends Component {
     componentDidMount() {
         axios.get("https://api.rawg.io/api/games?page_size=20&tags=multiplayer&tags=online")
             .then(res => {
-                console.log(res)
+                
                 this.setState({
                     games: res.data.results
                 })
 
             })
             .catch(error => {
-                console.log('error:', error);
+                return(error)
             })
     }
 

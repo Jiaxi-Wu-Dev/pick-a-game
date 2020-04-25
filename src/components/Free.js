@@ -53,7 +53,7 @@ function Free() {
             );
 
         const gameTitles = await data.json();
-        console.log(gameTitles.gameTitles);
+        
         setTitles(gameTitles.gameTitles);
     };
 
